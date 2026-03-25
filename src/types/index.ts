@@ -7,46 +7,35 @@ export type User = {
   createdAt: string;
 };
 
-export type Question = {
+export type Registration = {
   id: number;
-  question: string;
-  answer: string;
-  createdAt: string;
-};
-
-export type Submission = {
-  id: number;
-  userId: number;
-  questionId: number;
-  answer: string;
-  score: number;
-  createdAt: string;
-};
-
-export type RankingRow = {
-  userId: number;
-  name: string;
-  church: string;
-  totalScore: number;
-};
-
-export type SubmissionDetail = {
-  submissionId: number;
-  questionId: number;
-  question: string;
-  correctAnswer: string;
-  userAnswer: string;
-  score: number;
-};
-
-export type TestSubmissionPayload = {
   name: string;
   church: string;
   email: string;
   phone: string;
-  answers: Array<{
-    questionId: number;
-    answer: string;
-  }>;
+  createdAt: string;
 };
 
+export type Notice = {
+  id: number;
+  title: string;
+  content: string;
+  createdAt: string;
+};
+
+export type GalleryItem = {
+  id: number;
+  title: string;
+  imageUrl: string;
+  createdAt: string;
+};
+
+export type RegistrationInput = Omit<Registration, "id" | "createdAt">;
+
+export type NoticeInput = Omit<Notice, "id" | "createdAt">;
+
+export type GalleryInput = Omit<GalleryItem, "id" | "createdAt">;
+
+export type UploadResponse = {
+  url: string;
+};

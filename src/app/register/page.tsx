@@ -7,10 +7,9 @@ export default function RegisterPage() {
       <SectionHeading
         eyebrow="Registration"
         title="참가 신청"
-        description="참가자 정보를 입력하면 DB에 저장되며, 이후 시험과 랭킹에 연결됩니다."
+        description="이름, 교회, 연락처, 이메일을 입력하면 참가 신청 정보가 저장됩니다."
       />
       <RegisterForm />
     </main>
   );
 }
-

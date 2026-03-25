@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { registerUser } from "@/lib/repositories";
+import { createRegistration } from "@/lib/repositories";
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -11,7 +11,6 @@ export async function POST(request: Request) {
     }
   }
 
-  const user = await registerUser(body);
-  return NextResponse.json({ user }, { status: 201 });
+  const registration = await createRegistration(body);
+  return NextResponse.json({ registration }, { status: 201 });
 }
-

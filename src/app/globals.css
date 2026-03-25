@@ -12,8 +12,8 @@ html {
 
 body {
   margin: 0;
-  background: #f4efea;
-  color: #3e3a39;
+  background: #ffffff;
+  color: #22313f;
 }
 
 * {
@@ -25,11 +25,17 @@ a {
   text-decoration: none;
 }
 
-img {
+img,
+video {
   display: block;
 }
 
+.page-shell {
+  background:
+    linear-gradient(180deg, rgba(245, 241, 235, 0.55) 0%, rgba(255, 255, 255, 0.95) 18%, #ffffff 100%);
+}
+
 ::selection {
-  background: rgba(200, 169, 106, 0.28);
-  color: #3e3a39;
+  background: rgba(214, 195, 163, 0.45);
+  color: #0f2a44;
 }

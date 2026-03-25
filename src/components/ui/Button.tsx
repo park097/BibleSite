@@ -13,12 +13,12 @@ type ButtonProps = {
 };
 
 const baseStyles =
-  "inline-flex items-center justify-center rounded-md border px-5 py-3 text-sm font-medium tracking-[0.08em] transition duration-200 focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:cursor-not-allowed disabled:opacity-50";
+  "inline-flex items-center justify-center rounded-lg border px-6 py-3 text-sm font-medium uppercase tracking-[0.18em] transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-50";
 
 const variants = {
-  primary: "border-primary bg-primary text-ink hover:bg-primary",
-  secondary: "border-[#d8c3a0] bg-secondary text-ink hover:bg-secondary",
-  ghost: "border-[#cfc1b0] bg-transparent text-ink hover:bg-transparent"
+  primary: "border-primary bg-primary text-white hover:bg-[#183b5d]",
+  secondary: "border-accent bg-secondary text-primary hover:bg-[#efe7db]",
+  ghost: "border-primary/30 bg-transparent text-primary hover:bg-primary hover:text-white"
 };
 
 export function Button({

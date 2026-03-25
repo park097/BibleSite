@@ -1,54 +1,41 @@
 export function SiteFooter() {
   return (
-    <footer className="bg-footer text-[#e8e1d8]">
-      <div className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-12 border-b border-white/10 pb-14 md:grid-cols-2 xl:grid-cols-4">
-          <div>
-            <p className="text-xs uppercase tracking-[0.35em] text-primary">Bible Memory</p>
-            <h3 className="mt-5 text-3xl font-light tracking-[0.08em] text-white">성경 암송 대회</h3>
-            <p className="mt-5 max-w-xs text-sm leading-7 text-white/62">
-              말씀을 배우고 나누는 공동체 행사를 위한 성경 암송 플랫폼입니다.
-            </p>
-          </div>
+    <footer className="bg-footer text-gray-300">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-3">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-accent">About</p>
+          <h3 className="mt-5 font-serif text-3xl text-white">성경 암송 대회</h3>
+          <p className="mt-5 max-w-sm text-sm leading-8 text-gray-300">
+            말씀을 마음에 새기고 공동체 안에서 나누는 교회 행사 플랫폼입니다. 안내, 신청, 공지와 기록을 한곳에 담았습니다.
+          </p>
+        </div>
 
-          <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-white/70">Explore</p>
-            <ul className="mt-6 space-y-3 text-sm text-white/62">
-              <li>대회 안내</li>
-              <li>참가 신청</li>
-              <li>암송 시험</li>
-              <li>랭킹</li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-white/70">Schedule</p>
-            <ul className="mt-6 space-y-3 text-sm text-white/62">
-              <li>접수: 2026.05.01 - 05.14</li>
-              <li>시험: 2026.05.18 - 05.24</li>
-              <li>발표: 2026.05.31</li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-white/70">Newsletter</p>
-            <p className="mt-6 text-sm leading-7 text-white/62">행사 소식과 공지 업데이트를 이메일로 받아보세요.</p>
-            <div className="mt-6 flex gap-3 border-b border-white/15 pb-3">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full bg-transparent text-sm text-white outline-none placeholder:text-white/35"
-              />
-              <button type="button" className="text-xs uppercase tracking-[0.22em] text-primary">
-                Subscribe
-              </button>
-            </div>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-accent">Address</p>
+          <div className="mt-5 space-y-3 text-sm leading-8 text-gray-300">
+            <p>샘물교회</p>
+            <p>서울시 중구 샘물로 100</p>
+            <p>02-123-4567</p>
+            <p>biblememory@church.org</p>
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 pt-6 text-xs text-white/45 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Bible Memory Competition. All rights reserved.</p>
-          <p>기도와 말씀, 그리고 공동체를 위한 행사 홈페이지</p>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-accent">Newsletter</p>
+          <p className="mt-5 text-sm leading-8 text-gray-300">행사 공지와 변경 사항을 이메일로 받아보세요.</p>
+          <div className="mt-6 space-y-3">
+            <input
+              type="email"
+              placeholder="이메일 주소"
+              className="w-full rounded-lg border border-gray-600 bg-gray-800 px-4 py-3 text-sm text-white outline-none placeholder:text-gray-400"
+            />
+            <button
+              type="button"
+              className="w-full rounded-lg bg-primary px-4 py-3 text-sm font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#183b5d]"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
     </footer>

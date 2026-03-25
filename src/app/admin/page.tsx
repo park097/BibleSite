@@ -7,10 +7,9 @@ export default function AdminPage() {
       <SectionHeading
         eyebrow="Admin"
         title="관리자 페이지"
-        description="문제 CRUD, 제출 결과 조회, 점수 수정을 한 곳에서 관리할 수 있습니다."
+        description="공지사항, 갤러리, 참가 신청 데이터를 한 곳에서 관리할 수 있습니다."
       />
       <AdminDashboard />
     </main>
   );
 }
-

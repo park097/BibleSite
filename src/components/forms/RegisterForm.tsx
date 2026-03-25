@@ -35,7 +35,7 @@ export function RegisterForm() {
       }
 
       setStatus("success");
-      setMessage("참가 신청이 완료되었습니다.");
+      setMessage("참가 신청이 완료되었습니다. 행사 전 안내 문자를 보내드릴 예정입니다.");
       setForm(initialState);
     } catch (error) {
       setStatus("error");
@@ -69,6 +69,10 @@ export function RegisterForm() {
               />
             </label>
           ))}
+        </div>
+        <div className="rounded-3xl border border-primary/15 bg-white/50 p-4 text-sm leading-7 text-ink/75">
+          신청 정보는 참가자 확인과 행사 안내를 위해 저장됩니다. DB 연결 전에는 메모리 저장으로 동작하므로
+          서버 재시작 시 데이터가 유지되지 않을 수 있습니다.
         </div>
         <div className="flex items-center justify-between gap-4">
           <p className="text-sm text-ink/70">

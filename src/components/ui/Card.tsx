@@ -8,7 +8,7 @@ type CardProps = {
 
 export function Card({ children, className }: CardProps) {
   return (
-    <div className={clsx("rounded-lg bg-card p-6 shadow-card ring-1 ring-primary/5", className)}>
+    <div className={clsx("rounded-lg bg-card p-6 shadow-soft ring-1 ring-primary/6", className)}>
       {children}
     </div>
   );

@@ -5,24 +5,36 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#C8A96A",
-        secondary: "#EFE7DD",
-        parchment: "#F4EFEA",
-        card: "#EFE7DD",
-        ink: "#3E3A39",
-        muted: "#7A6F66",
-        footer: "#2B2B2B"
+        primary: "#0f2a44",
+        secondary: "#f5f1eb",
+        accent: "#d6c3a3",
+        background: "#ffffff",
+        footer: "#1a1a1a",
+        ink: "#22313f",
+        muted: "#6d7076",
+        card: "#ffffff",
+        parchment: "#f5f1eb"
       },
       boxShadow: {
-        soft: "none",
-        card: "none"
+        soft: "0 16px 40px rgba(15, 42, 68, 0.08)",
+        card: "0 20px 50px rgba(15, 42, 68, 0.08)"
       },
       borderRadius: {
+        xl: "1rem",
         "4xl": "2rem"
       },
       fontFamily: {
-        serif: ["var(--font-pretendard)", "sans-serif"],
-        sans: ["var(--font-pretendard)", "sans-serif"]
+        serif: ["var(--font-display)", "Georgia", "serif"],
+        sans: ["var(--font-pretendard)", "Noto Sans KR", "sans-serif"]
+      },
+      keyframes: {
+        "subtle-zoom": {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.06)" }
+        }
+      },
+      animation: {
+        "subtle-zoom": "subtle-zoom 10s ease-out forwards"
       }
     }
   },
